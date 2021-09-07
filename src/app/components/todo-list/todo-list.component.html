@@ -1,0 +1,6 @@
+<app-add-task-menu (onAddTask)="addTask($event)"></app-add-task-menu>
+<ul>
+  <app-task *ngFor="let task of tasks;" [task]="task" (onSetTaskChecked)="setTaskChecked(task)"
+    (onDeleteTask)="deleteTask(task)">
+  </app-task>
+</ul>

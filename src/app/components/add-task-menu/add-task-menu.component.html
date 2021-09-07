@@ -1,0 +1,7 @@
+<div class="header">
+  <h2>My To Do List</h2>
+  <form (ngSubmit)="addTask()">
+    <input type="text" name="title" [(ngModel)]='title' placeholder="Title..." autocomplete="off">
+    <span class="addBtn" (click)="addTask()">Add</span>
+  </form>
+</div>
