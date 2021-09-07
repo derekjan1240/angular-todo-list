@@ -2,3 +2,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.odd ::ng-deep {
+  li {
+    background: #f9f9f9;
+  }
+}
